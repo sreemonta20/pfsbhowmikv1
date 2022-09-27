@@ -29,11 +29,20 @@ export class PortfolioComponent implements OnInit {
   constructor(private conversion: conversions, private apiService: ApiService,
     private http: HttpClient, private formBuilder: FormBuilder,
     private messageService: MessageService, private toastr: ToastrService,) {
+      
     this.conversion.loadScripts();
   }
 
   ngOnInit(): void {
+    debugger
+    this.currentExpActive();
     this.createForm();
+    //list-group-item list-group-item-action active
+    
+  }
+  currentExpActive(){
+    document.getElementById("listgroup-bluelogic").className = "list-group-item list-group-item-action active";
+    document.getElementById("listgroup-m2sys").className = "list-group-item list-group-item-action";
   }
   createForm() {
     this.contactForm = this.formBuilder.group({
