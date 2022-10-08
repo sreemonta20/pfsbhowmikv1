@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 export class AppComponent  {
   title = 'pfsbhowmikv1';
   // message: 'Welcome';
+  debugger
 
 }
 // export class AppComponent  implements OnInit {

@@ -71,6 +71,10 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "development": {
+              "optimization": false,
+              "sourceMap": true
             }
           }
         },
@@ -82,8 +86,12 @@
           "configurations": {
             "production": {
               "browserTarget": "pfsbhowmikv1:build:production"
+            },
+            "development": {
+              "browserTarget": "pfsbhowmikv1:build:development"
             }
-          }
+          },
+          "defaultConfiguration": "development"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",

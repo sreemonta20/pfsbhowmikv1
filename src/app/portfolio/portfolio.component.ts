@@ -41,8 +41,10 @@ export class PortfolioComponent implements OnInit {
     
   }
   currentExpActive(){
+    debugger
     document.getElementById("listgroup-bluelogic").className = "list-group-item list-group-item-action active";
     document.getElementById("listgroup-m2sys").className = "list-group-item list-group-item-action";
+
   }
   createForm() {
     this.contactForm = this.formBuilder.group({
