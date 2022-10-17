@@ -11,6 +11,8 @@ export class AppComponent  {
   title = 'pfsbhowmikv1';
   // message: 'Welcome';
   debugger
+  myFileName = 'cv_sreemonta_bhowmik.pdf';
+  fileUrl = 'assets/docs/cv_sreemonta_bhowmik.pdf'
 
 }
 // export class AppComponent  implements OnInit {
